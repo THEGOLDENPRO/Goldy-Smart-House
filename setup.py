@@ -11,7 +11,7 @@ classifiers = [
  
 setup(
   name='goldysmarthouse',
-  version='1.0dev1',
+  version='1.0dev2',
   description='A shity python module that allows a Google Assistant device (Google Home, etc) to run code on your computer.', 
   long_description=open('README.txt').read(), 
   url='', 
@@ -22,6 +22,6 @@ setup(
   classifiers=classifiers, 
   keywords=['goldysmarthouse', 'goldy smart house', 'smart goldy house', "google home", "google assistant", "google home client"], 
   packages=find_packages(), 
-  install_requires=["requests", "googlecontroller"],
+  install_requires=["requests", "googlecontroller", "librosa"],
   python_requires=">=3.7"
 )
