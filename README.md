@@ -33,7 +33,7 @@ client = Client("[dropbox_share_link]", google_nest_speaker_ip="[e.g. 192.168.1.
 
 @events.on_command()
 def open_notepad():
-    subprocess.Popen(["C:/Windows/System32/notepad.exe"])
+    subprocess.Popen(["C:/Windows/System32/notepad.exe"]) # This only works on windows.
     return "Notepad open"
 
 client.start()
