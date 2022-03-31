@@ -39,4 +39,4 @@ def open_notepad():
 client.start()
 ```
 
-###### **[YouTube Video](https://youtu.be/_bkefjTpagA)** (PYPI: [INSTALL HERE](https://pypi.org/project/goldysmarthouse/))
+###### **[[YouTube Video]](https://youtu.be/_bkefjTpagA)** (PYPI: [INSTALL HERE](https://pypi.org/project/goldysmarthouse/))
