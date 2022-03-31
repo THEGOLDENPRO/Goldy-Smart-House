@@ -1,7 +1,5 @@
 import time
 import threading
-import mutagen
-from mutagen.wave import WAVE
 import requests
 from googlecontroller import GoogleAssistant as _GA_
 import librosa

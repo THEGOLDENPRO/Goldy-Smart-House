@@ -2,7 +2,6 @@ import threading
 import time
 import goldy_smart_house
 import datetime
-import asyncio
 
 MODULE_NAME = "COMMANDS"
 
