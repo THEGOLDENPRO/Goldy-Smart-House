@@ -3,7 +3,7 @@
 ![Discord Shield](https://discordapp.com/api/guilds/759051039470387272/widget.png?style=shield)
 
 <p align="center">
- <img src="" width="500" />
+ <img src="https://media.discordapp.net/attachments/436201641486581762/959065479056601128/Untitled-1.png" width="800" />
 </p>
 
 ### ``Goldy Smart House`` - A shity python module that allows a Google Assistant device (Google Home, etc) to run code on your computer.
