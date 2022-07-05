@@ -4,7 +4,10 @@ Goldy Smart House (Run code from Google & Amazon Assistent)
 Copyright (c) 2022-present (Dev Goldy)
 """
 
-from .methods import dropbox
+from . import objects
+from . import methods
+
+
 from . import cache, client, commands, google_nest_controller
 from . import events
 from . import utility
