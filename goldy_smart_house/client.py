@@ -1,6 +1,9 @@
 import goldy_smart_house
+import asyncio
 
 MODULE_NAME = "CLIENT"
+
+gsh_event_loop = asyncio.get_event_loop()
 
 class Client():
     """The Goldy Smart House client itself.
@@ -42,7 +45,10 @@ class Client():
         """Spins up the client and starts listening commands."""
         self.log(self, f"[{MODULE_NAME}] Client is starting up...")
         
-        self.on_command_event_loop.run()
+        try:
+            gsh_event_loop.run_until_complete(self.on_command_event_loop.run())
+        except KeyboardInterrupt:
+            self.on_command_event_loop.stop()
 
         self.log(self, f"[{MODULE_NAME}] Client is Ready!")
 

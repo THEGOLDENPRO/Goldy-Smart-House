@@ -32,7 +32,7 @@ class Loop(threading.Thread):
         self.dropbox = client.dropbox
         self.log = goldy_smart_house.utility.log
         
-    def run(self):
+    async def run(self):
         # Append all old commands to cache.
         for line in self.dropbox.read_file().splitlines():
             goldy_smart_house.cache.main_cache_dict["old_commands"].append(line)
