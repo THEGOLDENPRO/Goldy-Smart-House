@@ -1,4 +1,4 @@
-# Goldy Smart House *(A shity Google Home Module)*
+# Goldy Smart House *(A Python Google Home Module)*
 
 ![Discord Shield](https://discordapp.com/api/guilds/759051039470387272/widget.png?style=shield)
 
