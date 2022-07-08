@@ -34,9 +34,6 @@ class Dropbox(GSHMethod):
 
             return new_command
 
-        print("Lol")
-        print("what an L!")
-
         return None
 
     def convert_string_to_command(self, command_string:str):
