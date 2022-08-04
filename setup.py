@@ -22,6 +22,6 @@ setup(
   classifiers=classifiers, 
   keywords=['goldysmarthouse', 'goldy smart house', 'smart goldy house', "google home", "google assistant", "google home client"], 
   packages=find_packages(), 
-  install_requires=["requests", "googlecontroller", "librosa", "devgoldyutils"],
+  install_requires=["requests", "googlecontroller", "librosa", "devgoldyutils", "thefuzz", "python-Levenshtein"],
   python_requires=">=3.7"
 )

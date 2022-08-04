@@ -1,3 +1,6 @@
+"""
+The module thats houses all the different methods.
+"""
 from __future__ import annotations
 
 import goldy_smart_house

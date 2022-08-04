@@ -26,12 +26,16 @@ class Client(devgoldyutils.Console):
     `read_back_volume` : int
         Allows you to adjust the smart speaker read back volume. (`0 - 100`)
         (E.g `20` )
+
+    `string_match_fallback` : bool
+        Allows you disable/enable string matching fallback.
     """
-    def __init__(self, method:goldy_smart_house.methods.GSHMethod, google_nest_speaker_ip:str=None, enable_logs:bool=False, read_back_volume:int=None):
+    def __init__(self, method:goldy_smart_house.methods.GSHMethod, google_nest_speaker_ip:str=None, enable_logs:bool=False, read_back_volume:int=None, string_match_fallback:bool=True):
         self.method_ = method
         self.google_nest_speaker_ip = google_nest_speaker_ip
         self.enable_logs = enable_logs
         self.read_back_volume = read_back_volume
+        self.string_match_fallback = string_match_fallback
 
         self.google_nest_device = None
         if not google_nest_speaker_ip == None:
@@ -42,6 +46,8 @@ class Client(devgoldyutils.Console):
         # on_command Event Loop
         self.on_command_event_loop = goldy_smart_house.commands.Loop(self)
 
+        super().__init__()
+
     @property
     def method(self):
         """Returns the method object of the method currently being used."""
@@ -49,7 +55,7 @@ class Client(devgoldyutils.Console):
 
     def start(self):
         """Spins up the client and starts listening for commands on chosen method."""
-        self.log(self, f"[{MODULE_NAME}] Client is starting up with method {self.method.name}...")
+        self.log(self, f"[{MODULE_NAME}] Client is starting up using the '{self.method.name}' method...")
         
         try:
             self.log(self, f"[{MODULE_NAME}] Client is Ready!")
