@@ -11,7 +11,7 @@ classifiers = [
  
 setup(
   name='goldysmarthouse',
-  version='1.0dev2',
+  version='2',
   description='A shity python module that allows a Google Assistant device (Google Home, etc) to run code on your computer.', 
   long_description=open('README.txt').read(), 
   url='', 
