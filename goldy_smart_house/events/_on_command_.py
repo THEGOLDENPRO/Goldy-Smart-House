@@ -21,9 +21,9 @@ def on_command(command_name:str=None, smart_speaker_read_backs:bool=True, alias_
         if command_name == None:
             command_name = func.__name__
         
-        cache.main_cache_dict["assigned_commands"][f"{command_name}"] = {
+        cache.main_cache_dict["assigned_commands"][f"{command_name}".replace(" ", "_")] = {
                 "name": f"{command_name}".replace("_", " "),
-                "code_name": f"{command_name}",
+                "code_name": f"{command_name}".replace(" ", "_"),
                 "alias_names":alias_names,
                 "smart_speaker_read_back": smart_speaker_read_backs,
                 "function_object": func
